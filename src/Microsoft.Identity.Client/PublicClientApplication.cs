@@ -95,10 +95,7 @@ namespace Microsoft.Identity.Client
         public PublicClientApplication(string clientId, string authority)
             : this(null, clientId, authority)
         {
-            UserTokenCache = new TokenCache()
-            {
-                ClientId = clientId
-            };
+          
         }
 
         internal PublicClientApplication(IServiceBundle serviceBundle, string clientId, string authority)
